@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabric Collection | Friends Clothes and Tailor</title>
+  <meta name="description" content="Explore nine shirting fabric collections at Friends Clothes and Tailor in Thakur Village, Kandivali East, Mumbai.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f6f6f6; color: #151515; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.6; }
+    .topbar { max-width: 1160px; margin: 0 auto; padding: 1.3rem 1.5rem; }
+    .back { color: #625a4a; font-size: 0.9rem; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
+    .back:hover { text-decoration: underline; }
+    a:focus-visible { outline: 2px solid #9a7a43; outline-offset: 5px; }
+    main { max-width: 1160px; padding: 0 1.5rem 5rem; margin: 0 auto; }
+    .intro { text-align: center; margin: 0 auto 2.5rem; max-width: 850px; }
+    h1 { font-size: clamp(1.6rem, 3vw, 2.45rem); font-weight: 500; line-height: 1.3; letter-spacing: 0.045em; text-transform: uppercase; margin: 0; }
+    h1::after { content: ''; display: block; width: 32px; height: 1px; background: #222; margin: 1.25rem auto 2rem; }
+    .intro p { font-size: 1rem; color: #737373; margin: 0.3rem 0; }
+    .collection-types { display: flex; justify-content: center; align-items: stretch; gap: 2rem; border-bottom: 1px solid #d8d8d8; margin-bottom: 3rem; }
+    .active-type { margin: 0; padding: 1rem 0; border-bottom: 2px solid #171717; text-transform: uppercase; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.08em; }
+    .future-type { padding: 1rem 0; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.7rem; font-size: 0.9rem; color: #787878; text-transform: uppercase; letter-spacing: 0.08em; }
+    .badge { font-size: 0.7rem; background: #eaeaea; color: #656565; border-radius: 3px; padding: 0.1rem 0.35rem; white-space: nowrap; }
+    .fabric-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
+    .fabric-card { background: #fff; border: 1px solid #d9d9d9; padding: 1rem; min-width: 0; }
+    .fabric-card img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; background: #eeede9; }
+    .fabric-card h2 { margin: 0.9rem 0 0.2rem; font-size: 1rem; font-weight: 600; text-transform: uppercase; }
+    .fabric-card p { margin: 0; font-size: 0.78rem; text-transform: uppercase; color: #777; letter-spacing: 0.07em; }
+    footer { text-align: center; border-top: 1px solid #ddd; padding: 1.5rem; font-size: 0.85rem; color: #777; }
+    @media (max-width: 900px) { .fabric-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 680px) { .fabric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } .collection-types { gap: 1rem; } .active-type, .future-type { font-size: 0.78rem; } .fabric-card { padding: 0.7rem; } }
+    @media (max-width: 380px) { main { padding-inline: 1rem; } .fabric-grid { grid-template-columns: minmax(0, 1fr); } }
+    .intro p, .fabric-card p { line-height: 1.75; }
+    .collection-types { flex-wrap: wrap; }
+    .fabric-card p { letter-spacing: 0.04em; }
+  </style>
+  <link rel="stylesheet" href="assets/motion.css">
+  <link rel="stylesheet" href="assets/booking.css">
+  <script src="assets/motion.js" defer></script>
+  <link rel="stylesheet" href="assets/social.css">
+</head>
+<body>
+  <header class="topbar"><a class="back" href="index.html#fabrics">← Back to Friends Clothes and Tailor</a></header>
+  <main>
+    <div class="intro">
+      <h1>Explore Our Fabric Collection</h1>
+      <p>Friends Clothes and Tailor offers premium fabric collections for men's shirting and suiting.</p>
+      <p>Browse our curated selection below.</p>
+    </div>
+    <div class="collection-types">
+      <p class="active-type" id="shirting-title">Shirting Collection</p>
+      <div class="future-type">Suiting Collection <span class="badge">Coming Soon</span></div>
+    </div>
+    <section class="fabric-grid" aria-labelledby="shirting-title">
+      <article class="fabric-card" aria-labelledby="collection-01">
+        <img src="assets/shirting-collection-01.png" alt="Shirting fabric rolls in Collection 01" loading="lazy" decoding="async">
+        <h2 id="collection-01">Collection 01</h2>
+        <p>Shirting Fabric Collection</p>
+      </article>
+      <article class="fabric-card" aria-labelledby="collection-02">
+        <img src="assets/shirting-collection-02.png" alt="Shirting fabric rolls in Collection 02" loading="lazy" decoding="async">
+        <h2 id="collection-02">Collection 02</h2>
+        <p>Shirting Fabric Collection</p>
+      </article>
+      <article class="fabric-card" aria-labelledby="collection-03">
+        <img src="assets/shirting-collection-03.png" alt="Shirting fabric rolls in Collection 03" loading="lazy" decoding="async">
+        <h2 id="collection-03">Collection 03</h2>
+        <p>Shirting Fabric Collection</p>
+      </article>
+      <article class="fabric-card" aria-labelledby="collection-04">
+        <img src="assets/shirting-collection-04.png" alt="Shirting fabric rolls in Collection 04" loading="lazy" decoding="async">
+        <h2 id="collection-04">Collection 04</h2>
+        <p>Shirting Fabric Collection</p>
+      </article>
+      <article class="fabric-card" aria-labelledby="collection-05">
+        <img src="assets/shirting-collection-05.png" alt="Shirting fabric rolls in Collection 05" loading="lazy" decoding="async">
+        <h2 id="collection-05">Collection 05</h2>
+        <p>Shirting Fabric Collection</p>
+      </article>
+      <article class="fabric-card" aria-labelledby="collection-06">
+        <img src="assets/shirting-collection-06.png" alt="Shirting fabric rolls in Collection 06" loading="lazy" decoding="async">
+        <h2 id="collection-06">Collection 06</h2>
+        <p>Shirting Fabric Collection</p>
+      </article>
+      <article class="fabric-card" aria-labelledby="collection-07">
+        <img src="assets/shirting-collection-07.png" alt="Shirting fabric rolls in Collection 07" loading="lazy" decoding="async">
+        <h2 id="collection-07">Collection 07</h2>
+        <p>Shirting Fabric Collection</p>
+      </article>
+      <article class="fabric-card" aria-labelledby="collection-08">
+        <img src="assets/shirting-collection-08.png" alt="Shirting fabric rolls in Collection 08" loading="lazy" decoding="async">
+        <h2 id="collection-08">Collection 08</h2>
+        <p>Shirting Fabric Collection</p>
+      </article>
+      <article class="fabric-card" aria-labelledby="collection-09">
+        <img src="assets/shirting-collection-09.png" alt="Shirting fabric rolls in Collection 09" loading="lazy" decoding="async">
+        <h2 id="collection-09">Collection 09</h2>
+        <p>Shirting Fabric Collection</p>
+      </article>
+    </section>
+  </main>
+  <footer>Friends Clothes and Tailor · Thakur Village, Kandivali East, Mumbai</footer>
+    <div class="floating-actions" aria-label="Contact and booking">
+    <a class="floating-call-now" href="tel:+919819898783" aria-label="Call Now: +91 98198 98783"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m6 3 4 1 1 5-3 2c1 2 3 4 5 5l2-3 5 1 1 4c0 2-2 3-4 3C9 21 3 15 3 7c0-2 1-4 3-4Z"/></svg>Call Now</a>
+    <a class="floating-book-now" href="booking.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 2v6M17 2v6M3 11h18m-13 5 3 3 5-5"/></svg>Book Now</a>
+  </div>
+  <nav class="social-rail" aria-label="Follow us on social media">
+    <a href="https://www.instagram.com/friends_cloth_and_tailor/" target="_blank" rel="noopener noreferrer" aria-label="Friends Clothes and Tailor on Instagram (opens in a new tab)" title="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <a class="social-facebook" href="https://www.facebook.com/profile.php?id=100063511886739" target="_blank" rel="noopener noreferrer" aria-label="Friends Clothes and Tailor on Facebook (opens in a new tab)" title="Facebook">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 22v-9h3l.5-4H14V7c0-1.2.4-2 2-2h2V1.4A25 25 0 0 0 15 1c-3 0-5 1.8-5 5v3H7v4h3v9h4Z"/></svg>
+    </a>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,22 @@
+/* Smooth entrances and hover emphasis, preserving photography proportions. */
+html { scroll-behavior: smooth; }
+.nav-links a, .back, .collection-enquire, .collection-special-action a,
+.fabric-explore, .hero .btn, .contact-card a {
+  transition: color 360ms ease, background-color 360ms ease, border-color 360ms ease, box-shadow 360ms ease;
+}
+.collection-card, .fabric-card, .contact-card, .brand-plaque, .why-benefits li {
+  transition: border-color 550ms ease, box-shadow 550ms ease, background-color 550ms ease, translate 550ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .collection-card:hover, .fabric-card:hover, .contact-card:hover {
+    border-color: #c6b595;
+    box-shadow: 0 16px 36px #30281720;
+  }
+  .brand-plaque:hover, .why-benefits li:hover { border-color: #c6b595; background-color: #fcfaf6; }
+  .fabric-explore:hover, .hero .btn:hover { box-shadow: 0 6px 18px #00000018; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+@media print { html { scroll-behavior: auto; } }

@@ -1,0 +1,11 @@
+/* Left-aligned brand with a refined, right-aligned navigation row. */
+header .nav-container{display:flex;flex-direction:column;align-items:stretch;gap:16px;max-width:1280px;padding:16px 24px}
+header .brand-title{align-self:flex-start;justify-content:flex-start;flex-wrap:wrap;text-align:left;font-size:clamp(21px,2.1vw,28px);letter-spacing:.065em;line-height:1.35;gap:10px}
+header .brand-title img{height:46px;width:auto}
+header .nav-links{align-self:flex-end;justify-content:flex-end;flex-wrap:wrap;gap:8px 24px;margin:0;padding:10px 0 0;width:100%;border-top:1px solid #e9e2d5}
+header .nav-links a{position:relative;font-size:12px;font-weight:500;letter-spacing:.075em;display:inline-block;padding:8px 2px;color:#344538;transition:color .35s ease}
+header .nav-links a::after{content:'';position:absolute;left:2px;right:2px;bottom:2px;height:1px;background:#b4975b;transform:scaleX(0);transform-origin:right;transition:transform .4s ease}
+header .nav-links a:hover,header .nav-links a:focus-visible{color:#92743e}
+header .nav-links a:hover::after,header .nav-links a:focus-visible::after{transform:scaleX(1);transform-origin:left}
+@media(max-width:600px){header .nav-container{padding:12px 16px;gap:10px}header .brand-title{font-size:20px;gap:6px;letter-spacing:.025em}header .brand-title img{height:34px}header .nav-links{gap:4px 14px}header .nav-links a{font-size:11px;letter-spacing:.02em}}
+@media(prefers-reduced-motion:reduce){header .nav-links a,header .nav-links a::after{transition:none}}

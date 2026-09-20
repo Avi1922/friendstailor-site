@@ -1,0 +1,10 @@
+body{padding-bottom:180px}
+.floating-actions{position:fixed;right:calc(24px + env(safe-area-inset-right,0px));bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:1100;display:flex;flex-direction:column;gap:12px}
+.floating-actions a{display:inline-flex;align-items:center;justify-content:center;gap:10px;box-sizing:border-box;min-width:170px;min-height:60px;padding:16px 28px;border:1px solid #b49a66;border-radius:999px;background:#243c31;color:#fff7e6;box-shadow:0 6px 24px #142a3040;font-family:inherit;font-size:16px;font-weight:600;letter-spacing:.4px;line-height:1.4;text-decoration:none;transition:background .35s ease,box-shadow .35s ease}
+.floating-actions .floating-call-now{background:#eee0c0;color:#243c31}
+.floating-actions svg{width:22px;height:22px;flex-shrink:0}
+.floating-actions a:hover{background:#345040;color:#fff7e6;box-shadow:0 8px 28px #142a3050}
+.floating-actions a:focus-visible{outline:3px solid #b49a66;outline-offset:4px}
+@media(max-width:600px){.floating-actions{right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));gap:10px}.floating-actions a{min-width:156px;min-height:56px;padding:14px 22px}}
+@media(prefers-reduced-motion:reduce){.floating-actions a{transition:none}}
+@media print{.floating-actions{display:none}body{padding-bottom:0}}
