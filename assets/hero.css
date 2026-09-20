@@ -1,0 +1,18 @@
+/* A readable introduction with the actual storefront as its backdrop. */
+#home.hero{position:relative;min-height:650px;min-height:clamp(600px,85svh,820px);padding:80px max(24px,calc((100% - 1120px)/2));text-align:left;background:linear-gradient(90deg,rgba(15,29,23,.95) 0%,rgba(15,29,23,.85) 39%,rgba(15,29,23,.48) 72%,rgba(15,29,23,.3) 100%),url('shop-storefront.png') center center/cover no-repeat}
+#home .hero-container{max-width:1120px;margin:0 auto;width:100%}
+#home .hero-panel{max-width:680px;background:none;border:0;border-radius:0;padding:0;margin:0 0 32px}
+#home .hero-eyebrow{display:flex;align-items:center;gap:12px;font-size:11px;font-weight:500;letter-spacing:2px;color:#e0cb9d;margin-bottom:26px;line-height:1.7}
+#home h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(38px,5vw,66px);font-weight:400;text-transform:none;letter-spacing:-1.4px;line-height:1.12;color:#fffaf0;margin:0 0 28px}
+#home h1 span{color:#e3cfa5}
+#home .hero-panel>p{font-size:clamp(16px,1.6vw,19px);font-weight:400;line-height:1.7;color:#f0eee5;margin:0 0 22px;max-width:540px}
+#home .hero-tagline{font-size:11px;letter-spacing:1.8px;line-height:2;color:#e0cb9d;font-weight:500;margin:0}
+#home .btn-group{justify-content:flex-start;gap:12px}
+#home .btn{min-height:48px;padding:13px 22px;font-size:12px;letter-spacing:.5px;border-radius:5px;transition:background-color .4s,color .4s,border-color .4s}
+#home .btn-primary{background:#eee0c0;border-color:#eee0c0;color:#21372b}
+#home .btn-primary:hover{background:#fff6e4;border-color:#fff6e4}
+#home .btn-secondary{background:#10291d50;border-color:#c9d0bd80;color:#fffaf0}
+#home .btn-secondary:hover{background:#fff6e4;color:#21372b;border-color:#fff6e4}
+#home .btn svg{width:15px;height:15px}
+@media(max-width:600px){#home.hero{padding:64px 24px;min-height:600px;background-image:linear-gradient(90deg,rgba(15,29,23,.92),rgba(15,29,23,.72)),url('shop-storefront.png')}#home .hero-eyebrow{font-size:10px;letter-spacing:1.4px;gap:8px;flex-wrap:wrap}#home h1{letter-spacing:-.8px;font-size:clamp(34px,8.8vw,48px)}#home .hero-tagline{font-size:10px;letter-spacing:1px}#home .btn{padding:12px 16px}#home .btn-group{gap:10px}}
+@media(prefers-reduced-motion:reduce){#home .btn{transition:none}}

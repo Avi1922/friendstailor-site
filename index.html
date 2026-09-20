@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friends Clothes And Tailor | Bespoke Menswear Mumbai</title>
+  <title>Friends Clothes and Tailor | Bespoke Menswear Mumbai</title>
   <link rel="icon" type="image/png" href="logo.png">
   <style>
     :root {
@@ -76,7 +76,7 @@
     .nav-links a {
       text-decoration: none;
       color: var(--primary);
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -102,7 +102,7 @@
 
     .hero-tagline {
       color: var(--accent);
-      font-size: 0.85rem;
+      font-size: 0.95rem;
       font-weight: 700;
       letter-spacing: 0.15em;
       text-transform: uppercase;
@@ -134,7 +134,7 @@
     .btn {
       display: inline-block;
       padding: 0.85rem 1.75rem;
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -188,6 +188,89 @@
       font-size: 1rem;
     }
 
+    /* Founder Section */
+    .founder {
+      background: radial-gradient(ellipse at 75% 45%, #151209 0%, #0b0b0a 70%);
+      color: #f5f5f3;
+      padding: 5rem 1.5rem;
+      scroll-margin-top: 100px;
+    }
+
+    .founder-inner {
+      max-width: 840px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 338px minmax(0, 1fr);
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .founder-photo {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 338 / 422;
+      overflow: hidden;
+      background: #111;
+    }
+
+    /* Frame only the portrait from the supplied 1300 x 642 screenshot. */
+    .founder-photo img {
+      position: absolute;
+      width: 384.615385%;
+      max-width: none;
+      height: auto;
+      left: -68.343195%;
+      top: -37.440758%;
+    }
+
+    .founder-quote-mark {
+      display: block;
+      color: #967019;
+      font-family: Georgia, serif;
+      font-size: 4rem;
+      line-height: 0.8;
+      margin-bottom: 0.5rem;
+    }
+
+    .founder blockquote p {
+      font-size: 1.2rem;
+      font-style: italic;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .founder-credit {
+      margin-top: 2rem;
+      padding-left: 1.1rem;
+      border-left: 1px solid var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .founder-credit h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .founder-credit p {
+      color: #aaa69a;
+      font-size: 0.82rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 1050px) {
+      .nav-container { flex-wrap: wrap; gap: 1rem; }
+    }
+
+    @media (max-width: 768px) {
+      .founder { padding: 3.5rem 1.5rem; }
+      .founder-inner { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+      .founder-photo { max-width: 338px; margin: 0 auto; }
+      .founder-message { max-width: 450px; margin: 0 auto; }
+      .founder blockquote p { font-size: 1.1rem; }
+    }
+
     /* About Section */
     .about-grid {
       display: grid;
@@ -237,12 +320,12 @@
       color: var(--white);
       font-weight: 600;
       text-transform: uppercase;
-      font-size: 0.85rem;
+      font-size: 0.95rem;
       letter-spacing: 0.05em;
     }
 
     td {
-      font-size: 0.95rem;
+      font-size: 1rem;
     }
 
     td.price {
@@ -296,7 +379,7 @@
     .contact-card p {
       color: #555;
       margin-bottom: 0.5rem;
-      font-size: 0.95rem;
+      font-size: 1rem;
     }
 
     /* Footer */
@@ -305,7 +388,7 @@
       color: #999999;
       padding: 2rem 1.5rem;
       text-align: center;
-      font-size: 0.85rem;
+      font-size: 0.95rem;
     }
 
     footer p {
@@ -323,163 +406,603 @@
         font-size: 1.8rem;
       }
     }
+    /* Home design based on the supplied Pomelli reference. */
+    section[id] { scroll-margin-top: 140px; }
+    .hero {
+      background: linear-gradient(#0003, #0003), url('assets/shop-home-background.png') center / cover no-repeat;
+      min-height: max(575px, calc(100svh - 80px));
+      display: flex;
+      align-items: center;
+      padding: 6rem 1.5rem 3rem;
+    }
+    .hero-container { width: 100%; max-width: 666px; }
+    .hero-panel {
+      padding: 2.75rem 2rem;
+      background: rgba(12, 12, 12, 0.38);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 3.8vw, 3.1rem);
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.5rem;
+    }
+    .hero p { font-size: 1.25rem; color: #f5f5f5; margin-bottom: 1rem; font-weight: 500; }
+    .hero-tagline { color: #d4bd83; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.12em; margin-bottom: 0; }
+    .hero .btn-group { gap: 0.7rem; }
+    .hero .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      min-height: 44px;
+      padding: 0.65rem 1.25rem;
+      border-radius: 0;
+      font-size: 0.78rem;
+      letter-spacing: 0.035em;
+    }
+    .hero .btn-primary { background: #fff; border-color: #fff; color: #152031; }
+    .hero .btn-primary:hover { background: #eee7d7; border-color: #eee7d7; }
+    .hero .btn-secondary { border-color: #ffffff80; }
+    .hero .btn svg { width: 13px; height: 13px; flex: none; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+    @media (max-width: 768px) {
+      .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem; width: 100%; }
+      .nav-links a { font-size: 0.82rem; }
+      .brand-title { font-size: 1rem; letter-spacing: 0.03em; }
+      .nav-container { justify-content: center; padding: 0.7rem 1rem; }
+      .hero { padding: 4rem 1rem 3rem; min-height: 560px; }
+      .hero-panel { padding: 2rem 1rem; }
+      .hero p { font-size: 1rem; }
+    }
+    /* Our Story: fixed portrait framing, with no animated image scaling. */
+    .our-story { background: #fff; padding: 5rem 1.5rem; }
+    .story-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 520px);
+      gap: 4rem;
+      align-items: center;
+    }
+    .story-copy h2 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .story-copy h2::after {
+      content: '';
+      display: block;
+      width: 36px;
+      height: 2px;
+      background: #303030;
+      margin: 1rem 0 1.5rem;
+    }
+    .story-intro { font-size: 1rem; color: #555; line-height: 1.85; }
+    .story-timeline { list-style: none; margin: 2rem 0; border-left: 1px solid #ddd; padding-left: 1.5rem; }
+    .story-timeline li { position: relative; padding-bottom: 1.5rem; }
+    .story-timeline li:last-child { padding-bottom: 0; }
+    .story-timeline li::before {
+      content: ''; position: absolute; width: 7px; height: 7px;
+      border-radius: 50%; background: #222; left: calc(-1.5rem - 4px); top: 0.5rem;
+    }
+    .story-timeline h3 { font-size: 1rem; }
+    .story-timeline .milestone-title { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.78rem; color: #777; margin: 0.2rem 0 0.45rem; }
+    .story-timeline p { font-size: 0.95rem; color: #666; line-height: 1.7; }
+    .story-note { border-left: 2px solid var(--accent); padding-left: 1rem; font-size: 1rem; font-weight: 600; }
+    .story-shop-photo {
+      position: relative; width: 520px; max-width: 100%; aspect-ratio: 512 / 313;
+      overflow: hidden; margin: 0 auto; background: #eee;
+      box-shadow: 0 12px 26px #00000014;
+    }
+    /* Display the original shop photograph without screenshot cropping or zoom. */
+    .story-shop-photo img {
+      display: block; width: 100%; max-width: 100%; height: auto;
+      transform: none; transition: none; animation: none;
+    }
+    @media (max-width: 850px) {
+      .story-inner { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+      .our-story { padding: 3.5rem 1.5rem; }
+      .story-copy h2 { font-size: 1.5rem; }
+    }
+    /* Why Choose Us: photo and eight benefits from the supplied reference. */
+    .why-section { background: #fff; padding: 4.5rem 1.5rem; }
+    .why-inner { max-width: 1030px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 431px) minmax(0, 1fr); gap: 3.75rem; align-items: center; }
+    .why-photo { position: relative; width: 100%; aspect-ratio: 431 / 417; overflow: hidden; box-shadow: 0 12px 30px #0000000d; }
+    /* Frame the photo above the bottom-corner mark in the supplied screenshot. */
+    .why-photo img { position: absolute; width: 269.837587%; max-width: none; height: auto; left: -15.081206%; top: -9.592326%; }
+    .why-copy h2 { font-size: 1.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.3; }
+    .why-copy h2::after { content: ''; display: block; width: 30px; height: 1px; background: #222; margin: 0.9rem 0 2.25rem; }
+    .why-copy > p { color: #606060; font-size: 1rem; line-height: 1.7; margin-bottom: 2rem; }
+    .why-benefits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; list-style: none; }
+    .why-benefits li { display: flex; align-items: center; gap: 0.8rem; min-height: 52px; padding: 0.8rem; border: 1px solid #ddd; font-size: 0.9rem; color: #111; }
+    .why-benefits span { flex: 0 0 16px; text-align: center; color: #80796c; font-size: 1.1rem; }
+    @media (max-width: 850px) {
+      .why-inner { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+      .why-photo { max-width: 431px; margin: 0 auto; }
+      .why-section { padding: 3.5rem 1.5rem; }
+    }
+    @media (max-width: 420px) { .why-benefits { grid-template-columns: minmax(0, 1fr); gap: 0.75rem; } }
+    /* Editorial collection combines outfit references and complete stitching prices. */
+    .collection { background: #f5f2ec; padding: 5rem 1.5rem; }
+    .collection-inner { max-width: 1120px; margin: 0 auto; }
+    .collection-heading { display: flex; justify-content: space-between; align-items: end; gap: 3rem; margin-bottom: 2.75rem; }
+    .collection-eyebrow { color: #78613d; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.16em; margin-bottom: 1rem; }
+    .collection-heading h2 { font-size: clamp(2.1rem, 4vw, 3.5rem); line-height: 1.15; font-weight: 500; letter-spacing: -0.04em; }
+    .collection-heading h2 em { font-family: Georgia, serif; font-weight: 400; color: #7c6340; }
+    .collection-intro { max-width: 360px; color: #635f59; font-size: 1rem; }
+    .collection-small { font-size: 0.85rem; margin-top: 1rem; }
+    .collection-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+    .collection-card { background: #fff; border: 1px solid #e1dbd1; display: flex; flex-direction: column; }
+    .collection-photo { width: 100%; aspect-ratio: 928 / 1152; position: relative; overflow: hidden; background: #ded9cf; }
+    .collection-photo img { display: block; width: 100%; max-width: 100%; height: auto; }
+    .collection-details { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; }
+    .collection-tag { font-size: 0.75rem; letter-spacing: 0.13em; color: #857051; margin-bottom: 0.5rem; }
+    .collection-details h3 { font-family: Georgia, serif; font-size: 1.5rem; font-weight: 400; line-height: 1.3; }
+    .collection-description { color: #6b6760; font-size: 0.95rem; margin: 0.75rem 0 1.25rem; }
+    .collection-prices { margin-top: auto; border-top: 1px solid #e9e4dc; padding-top: 0.7rem; }
+    .collection-prices > div { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.3rem 0; font-size: 0.9rem; }
+    .collection-prices strong { font-size: 1.05rem; white-space: nowrap; }
+    .collection-enquire { display: flex; justify-content: space-between; align-items: center; min-height: 44px; margin-top: 1rem; padding-top: 0.6rem; border-top: 1px solid #e9e4dc; color: #695233; text-decoration: none; font-size: 0.9rem; }
+    .collection-enquire:hover { text-decoration: underline; }
+    .collection-special { margin-top: 1.5rem; background: #202923; color: #fff; padding: 2rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; }
+    .collection-special .collection-eyebrow { color: #d2bd94; margin-bottom: 0.5rem; }
+    .collection-special h3 { font-family: Georgia, serif; font-size: 1.8rem; font-weight: 400; }
+    .collection-special p:not(.collection-eyebrow) { font-size: 0.95rem; color: #dedfd9; }
+    .collection-special-action { flex-shrink: 0; }
+    .collection-special-action strong { color: #fff; font-size: 1.6rem; }
+    .collection-special-action a { color: #e7d4af; font-size: 0.95rem; display: inline-block; padding: 0.7rem 0; }
+    .collection-footnote { color: #706b63; font-size: 0.85rem; line-height: 1.8; margin-top: 1.5rem; max-width: 800px; }
+    @media (max-width: 850px) {
+      .collection-heading { align-items: start; flex-direction: column; gap: 1.5rem; }
+      .collection-intro { max-width: 520px; }
+      .collection-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .collection-special { align-items: start; flex-direction: column; }
+    }
+    @media (max-width: 540px) { .collection { padding: 3.5rem 1.25rem; } .collection-grid { grid-template-columns: minmax(0, 1fr); } }
+    /* Fabric feature combines the collection introduction with the brand strip. */
+    .fabric-section { background: #fff; padding: 5rem 1.5rem 0; }
+    .fabric-inner { max-width: 1120px; margin: 0 auto; }
+    .fabric-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 5rem; align-items: center; padding-bottom: 4rem; }
+    .fabric-eyebrow { color: #80643c; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; margin-bottom: 1.2rem; }
+    .fabric-copy h2 { font-size: clamp(2rem, 3.7vw, 3.2rem); line-height: 1.2; font-weight: 500; letter-spacing: -0.035em; margin-bottom: 1.75rem; }
+    .fabric-copy h2 em { font-family: Georgia, serif; color: #826a46; font-weight: 400; }
+    .fabric-lead { color: #484848; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; }
+    .fabric-description { color: #74716b; font-size: 1rem; line-height: 1.8; }
+    .fabric-qualities { display: flex; flex-wrap: wrap; gap: 0.65rem; margin: 1.5rem 0 2rem; }
+    .fabric-qualities span { border: 1px solid #e2dbd0; padding: 0.35rem 0.85rem; color: #776242; font-size: 0.85rem; }
+    .fabric-explore { display: inline-flex; align-items: center; gap: 1.75rem; min-height: 52px; padding: 1rem 1.4rem; border: 0; background: #202923; color: #fff; font: 600 0.85rem var(--font-main); text-transform: uppercase; letter-spacing: 0.06em; }
+    .fabric-explore { text-decoration: none; } .fabric-explore:hover { background: #35463b; }
+    .fabric-coming-soon { color: #76716a; font-size: 0.85rem; margin-top: 0.6rem; }
+    .fabric-visual { max-width: 360px; width: 100%; margin: 0 auto; }
+    .fabric-photo { width: 100%; aspect-ratio: 928 / 1152; overflow: hidden; background: #eee7db; }
+    /* Display the supplied full-resolution fabric photo at its natural ratio. */
+    .fabric-photo img { display: block; width: 100%; max-width: 100%; height: auto; }
+    .fabric-caption { background: #f5f2ec; padding: 1.1rem 1.25rem; border-bottom: 2px solid #c5a059; }
+    .fabric-caption span { font-size: 0.75rem; letter-spacing: 0.13em; color: #80643c; }
+    .fabric-caption p { font-family: Georgia, serif; font-size: 1.05rem; margin-top: 0.2rem; }
+    .fabric-brand-row { border-top: 1px solid #e7e1d7; padding: 2rem 0; display: flex; align-items: center; gap: 3rem; }
+    .fabric-brand-row > p { color: #857052; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; flex-shrink: 0; }
+    .fabric-brand-row strong { font-weight: 600; }
+    .fabric-brand-row ul { display: flex; flex: 1; justify-content: space-around; gap: 1.5rem; flex-wrap: wrap; list-style: none; }
+    .fabric-brand-row li { font-family: Georgia, serif; font-size: 1.4rem; color: #34342f; }
+    @media (max-width: 850px) { .fabric-layout { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; } .fabric-section { padding-top: 3.5rem; } }
+    @media (max-width: 540px) { .fabric-brand-row { flex-direction: column; gap: 1.25rem; text-align: center; } .fabric-brand-row li { font-size: 1.15rem; } }
+    /* Brand display and boutique introduction share a restrained warm palette. */
+    .fabric-brand-row { padding: 2.75rem; margin-bottom: 3rem; border: 1px solid #e6dfd2; background: #f8f6f1; gap: 2.5rem; }
+    .brand-intro { flex: 0 1 300px; }
+    .brand-intro .brand-eyebrow { font-size: 0.75rem; letter-spacing: 0.16em; color: #80643c; margin-bottom: 0.8rem; }
+    .brand-intro h3 { font-size: 1.55rem; line-height: 1.3; font-weight: 500; letter-spacing: -0.03em; }
+    .brand-intro h3 em { font-family: Georgia, serif; font-weight: 400; color: #826a46; }
+    .brand-intro > p:last-child { font-size: 0.9rem; color: #777167; line-height: 1.7; margin-top: 0.9rem; max-width: 260px; }
+    .fabric-brand-row ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; min-width: 0; }
+    .fabric-brand-row .brand-plaque { min-height: 150px; background: #fff; border: 1px solid #e5dfd4; border-bottom: 3px solid #b99a65; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; text-align: center; padding: 1.5rem 1rem; }
+    .brand-plaque-name { font-family: Georgia, serif; font-size: clamp(1.25rem, 2.1vw, 1.9rem); line-height: 1.3; }
+    .brand-raymond .brand-plaque-name { color: #7b2d2b; }
+    .brand-peter .brand-plaque-name { color: #24392f; }
+    .brand-plaque-note { font: 500 0.7rem var(--font-main); letter-spacing: 0.14em; color: #857968; }
+    #contact .section-header { margin-bottom: 2.5rem; }
+    .visit-eyebrow { display: block; color: #826a46; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.17em; margin-bottom: 1rem; }
+    #contact .section-header h2 { font-family: Georgia, serif; font-weight: 400; font-size: clamp(2rem, 3.5vw, 2.8rem); text-transform: none; letter-spacing: -0.025em; }
+    #contact .section-header h2::after { content: ''; display: block; background: #b99a65; width: 44px; height: 2px; margin: 1.1rem auto; }
+    #contact .section-header p { font-size: 1rem; }
+    @media (max-width: 850px) {
+      .fabric-brand-row { flex-direction: column; align-items: stretch; padding: 2rem; gap: 1.5rem; }
+      .brand-intro { flex-basis: auto; text-align: center; }
+      .brand-intro > p:last-child { margin-inline: auto; max-width: 340px; }
+      .fabric-brand-row ul { flex: none; width: 100%; }
+    }
+    @media (max-width: 540px) { .fabric-brand-row { padding: 1.5rem 1rem; } .fabric-brand-row ul { gap: 0.65rem; } .fabric-brand-row .brand-plaque { padding: 1rem 0.5rem; min-height: 125px; } }
+    /* Story introduction, storefront and an uninterrupted five-stage timeline. */
+    .our-story { background: #f8f6f1; padding: 5rem 1.5rem; }
+    .story-inner { max-width: 1120px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 3rem 4rem; }
+    .story-eyebrow { color: #80643c; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em; margin-bottom: 1rem; }
+    .story-copy h2 { font-size: clamp(2rem, 3.5vw, 3.1rem); text-transform: none; letter-spacing: -0.035em; line-height: 1.2; margin-bottom: 1.5rem; }
+    .story-copy h2 em { font-family: Georgia, serif; color: #826a46; font-weight: 400; }
+    .story-copy h2::after { display: none; }
+    .story-intro { font-size: 1rem; color: #656159; line-height: 1.85; }
+    .story-facts { display: flex; gap: 2rem; margin-top: 1.75rem; }
+    .story-facts > div { border-left: 2px solid #b99a65; padding-left: 1rem; }
+    .story-facts strong { display: block; font: 400 2rem Georgia, serif; color: #26382d; }
+    .story-facts span { display: block; font-size: 0.82rem; color: #777167; margin-top: 0.4rem; }
+    .story-shop-photo { width: 520px; max-width: 100%; aspect-ratio: auto; background: #fff; padding: 0.7rem; border: 1px solid #e3ddd2; box-shadow: 0 14px 35px #32250f0b; }
+    .story-shop-photo img { position: static; display: block; width: 100%; height: auto; transform: none; }
+    .story-shop-photo figcaption { padding: 1.1rem 0.6rem 0.5rem; }
+    .story-shop-photo figcaption span { font-size: 0.75rem; letter-spacing: 0.13em; color: #80643c; }
+    .story-shop-photo figcaption p { font: 400 1.1rem Georgia, serif; margin-top: 0.4rem; color: #343c32; }
+    .story-journey { grid-column: 1 / -1; border-top: 1px solid #e2dacd; padding-top: 2.25rem; }
+    .story-timeline { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border: 0; padding: 0; margin: 2rem 0 0; gap: 0; }
+    .story-timeline li { border-top: 1px solid #c9b995; padding: 1.5rem 1rem 0 0; }
+    .story-timeline li::before { top: -5px; left: 0; width: 9px; height: 9px; background: #a78950; border: 2px solid #f8f6f1; box-shadow: 0 0 0 1px #a78950; }
+    .story-timeline h3 { font-size: 1rem; color: #26382d; }
+    .story-timeline .milestone-title { font-size: 0.75rem; color: #80643c; min-height: 2rem; margin: 0.4rem 0; }
+    .story-timeline p { color: #726d64; font-size: 0.9rem; }
+    .story-note { grid-column: 1 / -1; border: 0; margin: 0; padding: 1.25rem; text-align: center; background: #26382d; color: #f2e8d5; font: italic 400 1.15rem Georgia, serif; line-height: 1.6; }
+    @media (max-width: 850px) {
+      .story-inner { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+      .our-story { padding: 3.5rem 1.5rem; }
+      .story-timeline { grid-template-columns: minmax(0, 1fr); margin-left: 0.3rem; }
+      .story-timeline li { border-top: 0; border-left: 1px solid #c9b995; padding: 0 0 1.5rem 1.5rem; }
+      .story-timeline li::before { left: -5px; top: 0.4rem; }
+      .story-timeline li:last-child { padding-bottom: 0; }
+      .story-timeline .milestone-title { min-height: 0; }
+    }
+    /* Keep larger small text comfortable within navigation and narrow cards. */
+    .nav-container { flex-wrap: wrap; gap: 1rem 1.5rem; }
+    .nav-links { flex-wrap: wrap; gap: 0.75rem 1.25rem; }
+    .collection-description, .story-timeline p { line-height: 1.75; }
+    .collection-tag, .story-eyebrow, .fabric-eyebrow, .visit-eyebrow { line-height: 1.6; }
+    .brand-plaque-note { letter-spacing: 0.08em; }
+    @media (max-width: 1050px) { .why-benefits { grid-template-columns: minmax(0, 1fr); } }
+    @media (min-width: 541px) and (max-width: 700px) { .collection-details { padding: 1.1rem; } }
   </style>
+  <link rel="stylesheet" href="assets/motion.css">
+  <script src="assets/motion.js" defer></script>
+  <link rel="stylesheet" href="assets/reviews.css">
+  <link rel="stylesheet" href="assets/contact.css">
+  <link rel="stylesheet" href="assets/hero.css">
+  <link rel="stylesheet" href="assets/founder.css">
+  <link rel="stylesheet" href="assets/booking.css">
+  <script src="assets/reviews.js" defer></script>
+  <link rel="stylesheet" href="assets/social.css">
+  <link rel="stylesheet" href="assets/navigation.css">
 </head>
 <body>
 
   <!-- Navigation -->
   <header>
     <div class="nav-container">
-      <div class="brand-title"><img src="logo.png" alt="Friends Cloth & Tailor logo">Friends <span>Cloth & Tailor</span></div>
+      <div class="brand-title"><img src="logo.png" alt="Friends Clothes and Tailor logo">Friends <span>Clothes and Tailor</span></div>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services & Pricing</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#founder">Founder</a></li>
+        <li><a href="#our-story">Our Story</a></li>
         <li><a href="#fabrics">Fabrics</a></li>
+        <li><a href="#services">Services &amp; Pricing</a></li>
+        <li><a href="#about">Why Choose Us</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="home" aria-labelledby="home-title">
     <div class="hero-container">
-      <div class="hero-tagline">Premium Fabrics • Custom Tailoring • Perfect Fit</div>
-      <h1>32+ Years of Trust, Quality & Craftsmanship</h1>
-      <p>Bespoke tailoring and precision craftsmanship in Thakur Village, Kandivali East. Specializing in corporate suits, formal attire, and exquisite wedding wear.</p>
+      <div class="hero-panel">
+        <div class="hero-eyebrow">EST. 1994 <span aria-hidden="true">—</span> THAKUR VILLAGE, MUMBAI</div>
+        <h1 id="home-title">Friends Clothes<br><span>and Tailor</span></h1>
+        <p>32+ Years of Trust, Quality &amp; Craftsmanship</p>
+        <div class="hero-tagline">Premium Fabrics · Custom Tailoring · Perfect Fit</div>
+      </div>
       <div class="btn-group">
-        <a href="https://wa.me/919867221202" class="btn btn-primary" target="_blank" rel="noopener">Chat on WhatsApp</a>
-        <a href="tel:09867221202" class="btn btn-secondary">Call Directly</a>
+        <a href="https://wa.me/919819898783?text=Hi%2C%20I%20am%20interested." class="btn btn-primary" target="_blank" rel="noopener" aria-label="WhatsApp 9819898783: Hi, I am interested.">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-12 7L3 20l1.5-5A8 8 0 1 1 20 11.5Z"/><path d="M8 7c0 5 4 9 8 9l1-3-3-1-1 1-3-3 1-1-1-2Z"/></svg>
+          WhatsApp
+        </a>
+        <a href="tel:+919819898783" class="btn btn-secondary" aria-label="Call 9819898783">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m6 3 4 1 1 5-3 2c1 2 3 4 5 5l2-3 5 1 1 4c0 2-2 3-4 3C9 21 3 15 3 7c0-2 1-4 3-4Z"/></svg>
+          Call
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Friends%20Clothes%20and%20Tailor%2C%20Thakur%20Village%2C%20Kandivali%20East%2C%20Mumbai&amp;destination_place_id=ChIJodlKI1C35zsR84yGXrENvE0" class="btn btn-secondary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a8 8 0 0 0-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 0 0-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg>
+          Get Directions
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="section" id="about">
-    <div class="section-header">
-      <h2>Our Heritage</h2>
-      <p>From a 5 × 5 feet beginning to 32+ years of customer trust</p>
-    </div>
-    <div class="about-grid">
-      <div class="about-content">
-        <h3>Master Tailoring Since 1994</h3>
-        <p>Founded by Mr. Umesh Gupta, Friends Clothes And Tailor has evolved into a premier custom tailoring destination in Mumbai. Over the last three decades, our enterprise has been built on personal relationships, fit precision, and artisanal craftsmanship.</p>
-        <p>Whether you require a sharp 3-piece suit for executive presentations, refined groom's attire, or urgent 48-hour delivery for an upcoming event, our master tailors deliver an exact fit tailored to your body profile.</p>
+
+  <!-- Founder Section -->
+  <section class="founder" id="founder" aria-labelledby="founder-name">
+    <div class="founder-inner">
+      <div class="founder-photo">
+        <img src="assets/founder-reference.png" alt="Umesh Gupta, founder of Friends Clothes and Tailor, wearing a navy three-piece suit" width="1300" height="642" loading="lazy">
       </div>
-      <div class="highlight-box">
-        <h3>Why Choose Us</h3>
-        <p><strong>Bespoke Precision:</strong> 1-on-1 personalized measurement and styling guidance.</p>
-        <p><strong>Occasion Specialists:</strong> Experts in Tuxedos, Jodhpuris, Modi Jackets, and Sherwanis.</p>
-        <p><strong>Walk-ins Welcome:</strong> No prior appointment required. Urgent stitching services available.</p>
+      <div class="founder-message">
+        <p class="founder-eyebrow">A NOTE FROM OUR FOUNDER</p>
+        <span class="founder-quote-mark" aria-hidden="true">&ldquo;</span>
+        <blockquote>
+          <p>Since 1994, our journey has been built one customer, one garment and one relationship at a time. Our goal has never been just to make clothes, but to create a standard of quality and trust that lasts for generations.</p>
+        </blockquote>
+        <div class="founder-credit">
+          <h2 id="founder-name">Umesh Gupta</h2>
+          <p>Founder &amp; Owner</p>
+          <p>Friends Clothes and Tailor</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Fabric Brands Strip -->
-  <section class="brand-strip" id="fabrics">
-    <p style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.15em; color: var(--accent); font-weight: 700;">Authorized Retailer</p>
-    <div class="brand-list">
-      <span>Raymond</span>
-      <span>Siyaram's</span>
-      <span>Peter England</span>
+
+  <!-- Our Story Section -->
+  <section class="our-story" id="our-story" aria-labelledby="story-title">
+    <div class="story-inner">
+      <div class="story-copy">
+        <p class="story-eyebrow">OUR STORY · EST. 1994</p>
+        <h2 id="story-title">A small beginning.<br><em>A lasting legacy.</em></h2>
+        <p class="story-intro">Founded in 1994 by Mr. Umesh Gupta in Samta Nagar, Kandivali, Friends Clothes and Tailor began from a very small 5 × 5 feet shop. Over the years, the business steadily grew through quality craftsmanship, customer trust, personalized service and long-term relationships.</p>
+        <div class="story-facts"><div><strong>1994</strong><span>Where it all began</span></div><div><strong>32+</strong><span>Years of craftsmanship</span></div></div>
+      </div>
+      <div class="story-visual">
+        <figure class="story-shop-photo">
+          <img src="assets/shop-storefront.png" alt="Friends Clothes and Tailor storefront in Thakur Village, with the shop sign and clothing displays" width="512" height="313" loading="lazy">
+          <figcaption><span>FRIENDS CLOTHES AND TAILOR</span><p>Our home in Thakur Village, Mumbai.</p></figcaption>
+        </figure>
+      </div>
+      <div class="story-journey"><p class="story-eyebrow">THE JOURNEY SO FAR</p><ol class="story-timeline">
+          <li><h3>1994</h3><p class="milestone-title">The Beginning</p><p>Started from a 5 × 5 feet shop in Samta Nagar.</p></li>
+          <li><h3>2000–2005</h3><p class="milestone-title">Transition &amp; Development</p><p>A period of establishing and developing the business within the surrounding Samta Nagar area.</p></li>
+          <li><h3>2005–2008</h3><p class="milestone-title">A New Location</p><p>Moved to a shop approximately 500 metres from the original location.</p></li>
+          <li><h3>2008–2015</h3><p class="milestone-title">Continued Growth</p><p>Continued serving customers and growing within the Samta Nagar area.</p></li>
+          <li><h3>2016–Present</h3><p class="milestone-title">Thakur Village</p><p>Established the current business presence in Thakur Village, Mumbai.</p></li>
+        </ol></div>
+      <p class="story-note">From a 5 × 5 feet beginning to 32+ years of customer trust.</p>
     </div>
   </section>
 
-  <!-- Services & Pricing Section -->
-  <section class="section" id="services">
-    <div class="section-header">
-      <h2>Stitching Services & Pricing</h2>
-      <p>Standard stitching rates (GST extra. Customized designs or oversized garments charged accordingly)</p>
-    </div>
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Service</th>
-            <th>Type</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Formal Shirt</strong></td>
-            <td>Journal Formal Shirt Stitching</td>
-            <td class="price">₹650 + GST</td>
-          </tr>
-          <tr>
-            <td><strong>Formal Pant</strong></td>
-            <td>Journal Formal Pant Stitching</td>
-            <td class="price">₹800 + GST</td>
-          </tr>
-          <tr>
-            <td><strong>Kurta</strong></td>
-            <td>Journal Kurta Stitching</td>
-            <td class="price">₹800 + GST</td>
-          </tr>
-          <tr>
-            <td><strong>Modi Jacket</strong></td>
-            <td>Journal Formal Modi Jacket Stitching</td>
-            <td class="price">₹1,600 + GST</td>
-          </tr>
-          <tr>
-            <td><strong>Jacket / Blazer</strong></td>
-            <td>Journal Formal Jacket/Blazer Stitching</td>
-            <td class="price">₹3,600 + GST</td>
-          </tr>
-          <tr>
-            <td><strong>2-Piece Suit</strong></td>
-            <td>Journal Formal Suit Stitching</td>
-            <td class="price">₹4,200 + GST</td>
-          </tr>
-          <tr>
-            <td><strong>Jodhpuri Suit</strong></td>
-            <td>Journal Jodhpuri Stitching</td>
-            <td class="price">₹4,500 + GST</td>
-          </tr>
-          <tr>
-            <td><strong>3-Piece Suit</strong></td>
-            <td>Journal Formal 3-Piece Suit Stitching</td>
-            <td class="price">₹5,500 + GST</td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- Premium Fabric Collection -->
+  <section class="fabric-section" id="fabrics" aria-labelledby="fabric-title">
+    <div class="fabric-inner">
+      <div class="fabric-layout">
+        <div class="fabric-copy">
+          <p class="fabric-eyebrow">THE START OF SOMETHING PERSONAL</p>
+          <h2 id="fabric-title">Premium fabrics.<br><em>Endless possibilities.</em></h2>
+          <p class="fabric-lead">The foundation of an exceptional garment is its fabric. Explore our premium collection, including Raymond fabrics, and find the right starting point for your next outfit.</p>
+          <p class="fabric-description">Our tailoring experts help you choose the right weight, weave and texture for your garment, your occasion and your everyday comfort.</p>
+          <div class="fabric-qualities" aria-label="Fabric selection guidance"><span>Weight</span><span>Weave</span><span>Texture</span></div>
+          <a class="fabric-explore" href="fabrics.html">Explore Fabric in Store <span aria-hidden="true">↗</span></a>
+          
+        </div>
+        <div class="fabric-visual">
+          <figure class="fabric-photo"><img src="assets/premium-fabrics.png" alt="Folded grey and navy fabrics with tailoring scissors and a measuring tape on a wooden table" width="928" height="1152" loading="lazy"></figure>
+          <div class="fabric-caption"><span>CHOSEN WITH CARE</span><p>The right fabric makes all the difference.</p></div>
+        </div>
+      </div>
+      <div class="fabric-brand-row" aria-labelledby="brands-title">
+        <div class="brand-intro">
+          <p class="brand-eyebrow">BRANDS AVAILABLE IN STORE</p>
+          <h3 id="brands-title">Great fabric.<br><em>A personal choice.</em></h3>
+          <p>Explore our selection with guidance from your tailor.</p>
+        </div>
+        <ul aria-label="Fabric brands">
+          <li class="brand-plaque brand-raymond"><span class="brand-plaque-name">Raymond</span><span class="brand-plaque-note">AVAILABLE IN STORE</span></li>
+          <li class="brand-plaque brand-peter"><span class="brand-plaque-name">Peter England</span><span class="brand-plaque-note">AVAILABLE IN STORE</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- Contact & Details Section -->
+
+  <!-- Tailoring Collection & Pricing -->
+  <section class="collection" id="services" aria-labelledby="collection-title">
+    <div class="collection-inner">
+      <div class="collection-heading">
+        <div><p class="collection-eyebrow">OUR WORK · STITCHING SERVICES</p><h2 id="collection-title">Your style.<br><em>Tailored by Friends.</em></h2></div>
+        <div class="collection-intro"><p>From everyday essentials to occasion wear, explore our tailoring collection and find the right fit for you.</p><p class="collection-small">Standard stitching charges · GST extra</p></div>
+      </div>
+      <div class="collection-grid">
+        <article class="collection-card">
+          <div class="collection-photo"><img src="assets/bespoke-suit.png" alt="Bespoke Suits tailoring style reference" width="928" height="1152" loading="lazy"></div>
+          <div class="collection-details">
+            <p class="collection-tag">THE SIGNATURE</p>
+            <h3>Bespoke Suits</h3>
+            <p class="collection-description">A considered silhouette for work, celebrations and everything that matters.</p>
+            <div class="collection-prices"><div><span>2-Piece Suit</span><strong>₹4,200</strong></div><div><span>3-Piece Suit</span><strong>₹5,500</strong></div></div>
+            <a class="collection-enquire" href="https://wa.me/919819898783?text=Hi%2C%20I%20am%20interested%20in%20Bespoke%20Suits%20stitching." target="_blank" rel="noopener" aria-label="Enquire about Bespoke Suits on WhatsApp">Enquire on WhatsApp <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="collection-card">
+          <div class="collection-photo"><img src="assets/custom-shirt.png" alt="Custom Shirts tailoring style reference" width="928" height="1152" loading="lazy"></div>
+          <div class="collection-details">
+            <p class="collection-tag">THE EVERYDAY ESSENTIAL</p>
+            <h3>Custom Shirts</h3>
+            <p class="collection-description">Clean lines and a personal fit, made for your everyday wardrobe.</p>
+            <div class="collection-prices"><div><span>Formal Shirt</span><strong>₹650</strong></div></div>
+            <a class="collection-enquire" href="https://wa.me/919819898783?text=Hi%2C%20I%20am%20interested%20in%20Custom%20Shirts%20stitching." target="_blank" rel="noopener" aria-label="Enquire about Custom Shirts on WhatsApp">Enquire on WhatsApp <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="collection-card">
+          <div class="collection-photo"><img src="assets/tailored-trousers.png" alt="Tailored Trousers tailoring style reference" width="928" height="1152" loading="lazy"></div>
+          <div class="collection-details">
+            <p class="collection-tag">THE PERFECT PAIR</p>
+            <h3>Tailored Trousers</h3>
+            <p class="collection-description">Balanced proportions and a refined finish, tailored to your measurements.</p>
+            <div class="collection-prices"><div><span>Formal Pant</span><strong>₹800</strong></div></div>
+            <a class="collection-enquire" href="https://wa.me/919819898783?text=Hi%2C%20I%20am%20interested%20in%20Tailored%20Trousers%20stitching." target="_blank" rel="noopener" aria-label="Enquire about Tailored Trousers on WhatsApp">Enquire on WhatsApp <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="collection-card">
+          <div class="collection-photo"><img src="assets/blazer.png" alt="Blazers &amp; Jackets tailoring style reference" width="928" height="1152" loading="lazy"></div>
+          <div class="collection-details">
+            <p class="collection-tag">THE FINISHING TOUCH</p>
+            <h3>Blazers & Jackets</h3>
+            <p class="collection-description">Structured tailoring that brings your entire outfit together.</p>
+            <div class="collection-prices"><div><span>Jacket / Blazer</span><strong>₹3,600</strong></div></div>
+            <a class="collection-enquire" href="https://wa.me/919819898783?text=Hi%2C%20I%20am%20interested%20in%20Blazers%20%26%20Jackets%20stitching." target="_blank" rel="noopener" aria-label="Enquire about Blazers & Jackets on WhatsApp">Enquire on WhatsApp <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="collection-card">
+          <div class="collection-photo"><img src="assets/kurta.png" alt="Classic Kurtas tailoring style reference" width="928" height="1152" loading="lazy"></div>
+          <div class="collection-details">
+            <p class="collection-tag">THE FESTIVE CLASSIC</p>
+            <h3>Classic Kurtas</h3>
+            <p class="collection-description">Traditional style with a comfortable fit for your special occasions.</p>
+            <div class="collection-prices"><div><span>Kurta</span><strong>₹800</strong></div></div>
+            <a class="collection-enquire" href="https://wa.me/919819898783?text=Hi%2C%20I%20am%20interested%20in%20Classic%20Kurtas%20stitching." target="_blank" rel="noopener" aria-label="Enquire about Classic Kurtas on WhatsApp">Enquire on WhatsApp <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="collection-card">
+          <div class="collection-photo"><img src="assets/modi-jacket.png" alt="Modi Jackets tailoring style reference" width="928" height="1152" loading="lazy"></div>
+          <div class="collection-details">
+            <p class="collection-tag">THE DISTINCTIVE LAYER</p>
+            <h3>Modi Jackets</h3>
+            <p class="collection-description">A versatile tailored layer to complete your festive look.</p>
+            <div class="collection-prices"><div><span>Modi Jacket</span><strong>₹1,600</strong></div></div>
+            <a class="collection-enquire" href="https://wa.me/919819898783?text=Hi%2C%20I%20am%20interested%20in%20Modi%20Jackets%20stitching." target="_blank" rel="noopener" aria-label="Enquire about Modi Jackets on WhatsApp">Enquire on WhatsApp <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+      <div class="collection-special">
+        <div><p class="collection-eyebrow">FOR A SPECIAL OCCASION</p><h3>Jodhpuri Suit</h3><p>A distinctive traditional silhouette, tailored for your celebration.</p></div>
+        <div class="collection-special-action"><p><strong>₹4,500</strong><span> stitching + GST</span></p><a href="https://wa.me/919819898783?text=Hi%2C%20I%20am%20interested%20in%20Jodhpuri%20Suit%20stitching." target="_blank" rel="noopener">Discuss your Jodhpuri suit <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <p class="collection-footnote">All prices are standard stitching charges, excluding GST. Customized designs, oversized garments and additional services are charged separately. Images are style references.</p>
+    </div>
+  </section>
+
+
+  <!-- Why Choose Us Section -->
+  <section class="why-section" id="about" aria-labelledby="why-title">
+    <div class="why-inner">
+      <figure class="why-photo">
+        <img src="assets/why-choose-us-reference.png" alt="A tailor measuring a jacket on a dress form with a measuring tape" width="1163" height="531" loading="lazy">
+      </figure>
+      <div class="why-copy">
+        <h2 id="why-title">Why Choose Us</h2>
+        <p>Our commitment to excellence has built long-term relationships and trust across multiple generations of families in Mumbai.</p>
+        <ul class="why-benefits">
+          <li><span aria-hidden="true">◷</span>32+ Years Experience</li>
+          <li><span aria-hidden="true">◇</span>Premium Fabrics</li>
+          <li><span aria-hidden="true">⌑</span>Custom Fitting</li>
+          <li><span aria-hidden="true">✂</span>Expert Craftsmanship</li>
+          <li><span aria-hidden="true">♙</span>Personalised Service</li>
+          <li><span aria-hidden="true">☼</span>Design Guidance</li>
+          <li><span aria-hidden="true">✓</span>Trial &amp; Correction</li>
+          <li><span aria-hidden="true">♧</span>Long-Term Trust</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="customer-reviews" aria-labelledby="reviews-title"><div class="reviews-heading"><div><p class="reviews-eyebrow">THE TRUST BEHIND EVERY STITCH</p><h3 id="reviews-title">In our customers’ words</h3><p>Real experiences, shared on Google.</p></div><a class="google-score" href="https://www.google.com/maps/place/?q=place_id:ChIJodlKI1C35zsR84yGXrENvE0" target="_blank" rel="noopener"><strong>4.6 <span aria-hidden="true">★</span></strong><span>Google · 99 reviews</span><span>View all on Google ↗</span></a></div><div class="reviews-toolbar"><p>Selected 4–5 star reviews &amp; ratings</p><div class="reviews-controls" hidden><button type="button" id="reviews-prev" aria-label="Previous reviews" aria-controls="reviews-track">←</button><button type="button" id="reviews-next" aria-label="Next reviews" aria-controls="reviews-track">→</button></div></div><div class="reviews-track" id="reviews-track" tabindex="0" aria-label="Customer reviews. Scroll horizontally to explore."><article class="google-review" aria-label="1 of 49: Aditya Agarwal"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Great fitting and stitching. The tailoring is very good and the staff is very cooperative. They are very supportive and give great after sales…</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">A</span><div><h4>Aditya Agarwal</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="2 of 49: Akash Patidar"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Excellent formal blazer! The fit is perfect, the fabric feels premium, and the stitching is of high quality. It gives a sharp, professional look…</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">A</span><div><h4>Akash Patidar</h4><span>Google review · 3 months ago</span></div></div></article>
+<article class="google-review" aria-label="3 of 49: Sheela Sawant"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>My son and husband regularly stitch their shirts trousers suits and even kurta from FRIENDS TAILOR and they are always satisfied with the clothes…</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">S</span><div><h4>Sheela Sawant</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="4 of 49: Riki Narang"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Exceptional service! They got me a full suit stiched in just 2 days with top quality output Staff is good and consideras customers requests!</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">R</span><div><h4>Riki Narang</h4><span>Google review · 5 months ago</span></div></div></article>
+<article class="google-review" aria-label="5 of 49: Alok Bajpai"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Very friendlt staff and always available to extend support and share their advices on ask Stiching is upto mark</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">A</span><div><h4>Alok Bajpai</h4><span>Google review · 3 months ago</span></div></div></article>
+<article class="google-review" aria-label="6 of 49: Bimal Choudhary"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Best fiting , And best clothes , delivered before date of commencement, good staff behaviour</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">B</span><div><h4>Bimal Choudhary</h4><span>Google review · 3 months ago</span></div></div></article>
+<article class="google-review" aria-label="7 of 49: Jitendra Yadav"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Good stitching Get cloth stitch on time Good experience for cloth stitch perfect body fit Msg recieve whenever cloth is ready</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">J</span><div><h4>Jitendra Yadav</h4><span>Google review · 5 months ago</span></div></div></article>
+<article class="google-review" aria-label="8 of 49: Vivek Bhartiya"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>We have been getting our clothes stitched ( Suits, Sherwani, Kurta sets) from friends tailors for the last 5 years. We have always got…</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">V</span><div><h4>Vivek Bhartiya</h4><span>Google review · 11 months ago</span></div></div></article>
+<article class="google-review" aria-label="9 of 49: Arpit Mathur"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Amazing experience .. tailored my trousers to best fitting</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">A</span><div><h4>Arpit Mathur</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="10 of 49: Ganesh Patil"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Good cloth get stitch on time, brand they have raymond, park Avenue , peter England</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">G</span><div><h4>Ganesh Patil</h4><span>Google review · 5 months ago</span></div></div></article>
+<article class="google-review" aria-label="11 of 49: Kallappa Chavan"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Very nice shop timely delivery, quality products</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">K</span><div><h4>Kallappa Chavan</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="12 of 49: Jyoti Jayant"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>The fitting and the quality of fabric is too good</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">J</span><div><h4>Jyoti Jayant</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="13 of 49: Sandy idk"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Great shop, officially moving from ready made to custom shirts</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">S</span><div><h4>Sandy idk</h4><span>Google review · 3 months ago</span></div></div></article>
+<article class="google-review" aria-label="14 of 49: Jaitav Ratti"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Great experience. Fitting was perfect in the first try.</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">J</span><div><h4>Jaitav Ratti</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="15 of 49: Vipin Shukla"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>I have stitch my suit in this shop today get deliver very smart fitting,and service also awesome so I suggesting someone to try one…</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">V</span><div><h4>Vipin Shukla</h4><span>Google review · 11 months ago</span></div></div></article>
+<article class="google-review" aria-label="16 of 49: Nirav Desai"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Excellent stitching, very nice experience</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">N</span><div><h4>Nirav Desai</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="17 of 49: sumedh gaikwad"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Good quality of clothes and perfect Stitching</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">S</span><div><h4>sumedh gaikwad</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="18 of 49: Abhinav Mathur"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>One of the best services so far in last 10 years. Very polite people and professional service . Would recommend to all</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">A</span><div><h4>Abhinav Mathur</h4><span>Google review · 11 months ago</span></div></div></article>
+<article class="google-review" aria-label="19 of 49: Sagar Sah"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>I got best experience here.</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">S</span><div><h4>Sagar Sah</h4><span>Google review · 4 months ago</span></div></div></article>
+<article class="google-review" aria-label="20 of 49: Vikas Gupta"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Best shop</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">V</span><div><h4>Vikas Gupta</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="21 of 49: p thakur"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Very good service</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">P</span><div><h4>p thakur</h4><span>Google review · 3 months ago</span></div></div></article>
+<article class="google-review" aria-label="22 of 49: Mohit Gupta"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>A very nice talaring shop 🏬, Also is a best shop to &quot;RAYMOND MATERIAL&quot; All altaration work are done from here. Best sarvice. …</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">M</span><div><h4>Mohit Gupta</h4><span>Google review · 4 years ago</span></div></div></article>
+<article class="google-review" aria-label="23 of 49: Shekar Fruits"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Best place for shopping! You'll always find the latest and trendiest clothes at Friends Cloth Shop. The clothes are very comfortable and of premium…</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">S</span><div><h4>Shekar Fruits</h4><span>Google review · 4 months ago</span></div></div></article>
+<article class="google-review" aria-label="24 of 49: Deepak Waghela"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Goods and services</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">D</span><div><h4>Deepak Waghela</h4><span>Google review · 3 months ago</span></div></div></article>
+<article class="google-review" aria-label="25 of 49: Raju Pandit"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Good service</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">R</span><div><h4>Raju Pandit</h4><span>Google review · 11 months ago</span></div></div></article>
+<article class="google-review" aria-label="26 of 49: Mohim Ansari"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>I got a very good fitting, I got 2 pairs of clothes stitched here, you can also come and get them stitched.</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">M</span><div><h4>Mohim Ansari</h4><span>Google review · 3 weeks ago</span></div></div></article>
+<article class="google-review" aria-label="27 of 49: Mukesh das"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Best experience every time since last 3 years, Umesh Bhai pays close attention to everything.</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">M</span><div><h4>Mukesh das</h4><span>Google review · 3 weeks ago</span></div></div></article>
+<article class="google-review" aria-label="28 of 49: Satyam Kumar"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><blockquote>Very nice fabric and stitching is also very good</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">S</span><div><h4>Satyam Kumar</h4><span>Google review · 3 weeks ago</span></div></div></article>
+<article class="google-review" aria-label="29 of 49: Amarkant Mishra"><div class="review-stars" role="img" aria-label="4 out of 5 stars">★★★★<span aria-hidden="true">☆</span></div><blockquote>Veri good stitching &amp; good bihebiur</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">A</span><div><h4>Amarkant Mishra</h4><span>Google review · 3 months ago</span></div></div></article>
+<article class="google-review" aria-label="30 of 49: Abhishekh Vishwakarma"><div class="review-stars" role="img" aria-label="4 out of 5 stars">★★★★<span aria-hidden="true">☆</span></div><blockquote>Good service</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">A</span><div><h4>Abhishekh Vishwakarma</h4><span>Google review · 2 months ago</span></div></div></article>
+<article class="google-review" aria-label="31 of 49: Amilta EkkA"><div class="review-stars" role="img" aria-label="4 out of 5 stars">★★★★<span aria-hidden="true">☆</span></div><blockquote>Very nice service</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">A</span><div><h4>Amilta EkkA</h4><span>Google review · 11 months ago</span></div></div></article>
+<article class="google-review" aria-label="32 of 49: Glenn Maben"><div class="review-stars" role="img" aria-label="4 out of 5 stars">★★★★<span aria-hidden="true">☆</span></div><blockquote>Really delivered the ordered fast with good finishing .</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">G</span><div><h4>Glenn Maben</h4><span>Google review · 2 days ago</span></div></div></article>
+<article class="google-review" aria-label="33 of 49: Samir Kumar"><div class="review-stars" role="img" aria-label="4 out of 5 stars">★★★★<span aria-hidden="true">☆</span></div><blockquote>I got the cloth stitched and it fitted very well and I got the cloth a day in advance, I had never imagined this…</blockquote><div class="review-person"><span class="review-avatar" aria-hidden="true">S</span><div><h4>Samir Kumar</h4><span>Google review · 11 months ago</span></div></div></article>
+<article class="google-review" aria-label="34 of 49: Manik Chand"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">M</span><div><h4>Manik Chand</h4><span>Google review · a week ago</span></div></div></article>
+<article class="google-review" aria-label="35 of 49: Anshuman Singh"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">A</span><div><h4>Anshuman Singh</h4><span>Google review · 2 weeks ago</span></div></div></article>
+<article class="google-review" aria-label="36 of 49: Puja Gupta"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">P</span><div><h4>Puja Gupta</h4><span>Google review · 3 weeks ago</span></div></div></article>
+<article class="google-review" aria-label="37 of 49: Dhruv Revar"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">D</span><div><h4>Dhruv Revar</h4><span>Google review · 3 weeks ago</span></div></div></article>
+<article class="google-review" aria-label="38 of 49: Pratik Chowdhary"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">P</span><div><h4>Pratik Chowdhary</h4><span>Google review · 4 weeks ago</span></div></div></article>
+<article class="google-review" aria-label="39 of 49: Naina Raj"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">N</span><div><h4>Naina Raj</h4><span>Google review · 4 weeks ago</span></div></div></article>
+<article class="google-review" aria-label="40 of 49: Sourabh Bhagat"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">S</span><div><h4>Sourabh Bhagat</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="41 of 49: Tejas Dole"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">T</span><div><h4>Tejas Dole</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="42 of 49: Krushna kamble"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">K</span><div><h4>Krushna kamble</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="43 of 49: Vikram Jain"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">V</span><div><h4>Vikram Jain</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="44 of 49: Amit Panchal"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">A</span><div><h4>Amit Panchal</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="45 of 49: PRASAD KUNDER"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">P</span><div><h4>PRASAD KUNDER</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="46 of 49: Shubham Sahani"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">S</span><div><h4>Shubham Sahani</h4><span>Google review · a month ago</span></div></div></article>
+<article class="google-review" aria-label="47 of 49: Giriraj Bale"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">G</span><div><h4>Giriraj Bale</h4><span>Google review · 2 months ago</span></div></div></article>
+<article class="google-review" aria-label="48 of 49: Harsh Goyal"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">H</span><div><h4>Harsh Goyal</h4><span>Google review · 3 months ago</span></div></div></article>
+<article class="google-review" aria-label="49 of 49: neelam maurya"><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★<span aria-hidden="true"></span></div><p class="rating-only">Shared a star rating without a written review.</p><div class="review-person"><span class="review-avatar" aria-hidden="true">N</span><div><h4>neelam maurya</h4><span>Google review · 7 months ago</span></div></div></article></div><div class="reviews-bottom"><span>Swipe or scroll to explore all 49 featured ratings</span><a href="https://www.google.com/maps/place/?q=place_id:ChIJodlKI1C35zsR84yGXrENvE0" target="_blank" rel="noopener">Read all Google reviews ↗</a></div><p class="reviews-note">Selected positive reviews; longer comments are excerpted. Ratings and relative dates checked on 9 September 2026. This is a snapshot, not a live feed.</p></div>
+  </section>
+
+
+<!-- Contact & Details Section -->
   <section class="section" id="contact">
     <div class="section-header">
+      <span class="visit-eyebrow">LET’S CREATE YOUR NEXT OUTFIT</span>
       <h2>Visit Our Boutique</h2>
       <p>Located in the heart of Thakur Village, Kandivali East</p>
     </div>
     <div class="contact-grid">
       <div class="contact-card">
+        <span class="contact-icon" aria-hidden="true">⌖</span>
         <h3>Store Address</h3>
         <p>Shop No. 57, Saraswati Bldg</p>
         <p>Opposite McDonald's / Pizza Hut</p>
         <p>Thakur Village, Kandivali East</p>
         <p>Mumbai, Maharashtra 400101</p>
+        <a class="contact-action" href="https://www.google.com/maps/dir/?api=1&amp;destination=Friends%20Clothes%20and%20Tailor%2C%20Mumbai&amp;destination_place_id=ChIJodlKI1C35zsR84yGXrENvE0" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
       </div>
       <div class="contact-card">
+        <span class="contact-icon" aria-hidden="true">◷</span>
         <h3>Store Hours</h3>
         <p><strong>Tuesday – Sunday:</strong></p>
         <p>10:00 AM – 9:30 PM</p>
-        <p style="margin-top: 0.5rem; color: var(--text-muted);"><em>Monday: Closed</em></p>
+        <p class="closed-day"><span>Monday</span><span>Closed</span></p>
+        <p class="contact-small">Plan your visit during our store hours.</p>
       </div>
-      <div class="contact-card">
+      <div class="contact-card contact-connect">
+        <span class="contact-icon" aria-hidden="true">↗</span>
         <h3>Get in Touch</h3>
-        <p><strong>Phone:</strong> 098672 21202</p>
-        <p><strong>WhatsApp:</strong> +91 98672 21202</p>
-        <p><strong>SMS:</strong> +91 80970 15987</p>
-        <p><strong>Payments:</strong> Google Pay / Tez accepted</p>
+        <a class="contact-number" href="tel:+919819898783">+91 98198 98783</a>
+        <p class="contact-small">Let’s talk fabric, fit and your next outfit.</p>
+        <div class="contact-buttons"><a href="tel:+919819898783">Call us</a><a href="https://wa.me/919819898783?text=Hi%2C%20I%20am%20interested." target="_blank" rel="noopener">WhatsApp ↗</a></div>
+        <p class="contact-small contact-sms">SMS: <a href="sms:+918097015987">+91 80970 15987</a></p>
+        <p class="contact-small">Google Pay / Tez accepted</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; Friends Clothes And Tailor. All Rights Reserved.</p>
+    <p>&copy; Friends Clothes and Tailor. All Rights Reserved.</p>
     <p>Serving Mumbai, Mumbai Suburban, and Kandivali East.</p>
   </footer>
 
+    <div class="floating-actions" aria-label="Contact and booking">
+    <a class="floating-call-now" href="tel:+919819898783" aria-label="Call Now: +91 98198 98783"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m6 3 4 1 1 5-3 2c1 2 3 4 5 5l2-3 5 1 1 4c0 2-2 3-4 3C9 21 3 15 3 7c0-2 1-4 3-4Z"/></svg>Call Now</a>
+    <a class="floating-book-now" href="booking.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 2v6M17 2v6M3 11h18m-13 5 3 3 5-5"/></svg>Book Now</a>
+  </div>
+  <nav class="social-rail" aria-label="Follow us on social media">
+    <a href="https://www.instagram.com/friends_cloth_and_tailor/" target="_blank" rel="noopener noreferrer" aria-label="Friends Clothes and Tailor on Instagram (opens in a new tab)" title="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <a class="social-facebook" href="https://www.facebook.com/profile.php?id=100063511886739" target="_blank" rel="noopener noreferrer" aria-label="Friends Clothes and Tailor on Facebook (opens in a new tab)" title="Facebook">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 22v-9h3l.5-4H14V7c0-1.2.4-2 2-2h2V1.4A25 25 0 0 0 15 1c-3 0-5 1.8-5 5v3H7v4h3v9h4Z"/></svg>
+    </a>
+  </nav>
 </body>
 </html>

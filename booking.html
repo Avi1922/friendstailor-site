@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Book Your Tailoring | Friends Clothes and Tailor</title>
+  <link rel="stylesheet" href="assets/booking-page.css">
+  <script src="assets/booking-page.js" defer></script>
+  <link rel="stylesheet" href="assets/social.css">
+</head>
+<body>
+  <header><a href="index.html">← Back to our store</a><span>FRIENDS CLOTHES AND TAILOR</span></header>
+  <main>
+    <div class="intro"><p class="eyebrow">TAILORED AROUND YOU</p><h1>Let’s create your next outfit.</h1><p>Choose your services. We’ll take care of the fit.</p></div>
+    <noscript><p>Please enable JavaScript to calculate your booking, or call <a href="tel:+919819898783">+91 98198 98783</a>.</p></noscript>
+    <form id="booking-form">
+      <div class="booking-fields">
+        <section class="panel"><h2><span>01</span> Your details</h2><div class="details-grid"><label>Full name<input id="customer-name" name="name" autocomplete="name" maxlength="100" required placeholder="Your full name"></label><label>Mobile number<input id="customer-mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" maxlength="18" required placeholder="10-digit mobile number"><small>Indian mobile number, with or without +91.</small></label></div></section>
+        <section class="panel"><h2><span>02</span> Services &amp; quantities</h2><p class="muted">Stitching prices shown before 5% GST. Set a quantity to select a service.</p><label class="search-label" for="service-search">Find a service</label><input type="search" id="service-search" placeholder="Search shirt, suit, kurta…" aria-controls="service-list"><div id="service-list"></div><p id="no-results" hidden>No matching services. Try another search.</p></section>
+        <fieldset class="panel"><legend>03 · Your fabric</legend><label class="fabric-choice"><input type="radio" name="fabric" value="own" required><span><strong>I’ll bring my own fabric</strong><small>Stitching charges only.</small></span></label><label class="fabric-choice"><input type="radio" name="fabric" value="store" required><span><strong>I’ll buy fabric from your store</strong><small>Fabric will be selected and priced separately in store.</small></span></label></fieldset>
+      </div>
+      <aside class="panel summary"><p class="eyebrow">YOUR SELECTION</p><h2>Booking summary</h2><div id="summary-items"><p class="muted">Your selected services will appear here.</p></div><div class="totals" aria-live="polite" aria-atomic="true"><p><span>Stitching subtotal</span><strong id="subtotal">₹0.00</strong></p><p><span>GST (5%)</span><strong id="gst">₹0.00</strong></p><p class="grand-total"><span>Total</span><strong id="total">₹0.00</strong></p></div><p id="fabric-note" class="muted">Select your fabric preference.</p><p class="fine-print">Estimate for standard stitching. Custom designs, oversized garments and additional services may cost extra.</p><p id="booking-error" role="alert"></p><button id="submit-booking" type="submit" disabled>Book Now →</button><p class="fine-print">Opens WhatsApp with your booking details. Tap Send in WhatsApp to share your request. The store will confirm your booking.</p></aside>
+    </form>
+  </main>
+  <footer>Friends Clothes and Tailor · Thakur Village, Kandivali East, Mumbai</footer>
+  <nav class="social-rail" aria-label="Follow us on social media">
+    <a href="https://www.instagram.com/friends_cloth_and_tailor/" target="_blank" rel="noopener noreferrer" aria-label="Friends Clothes and Tailor on Instagram (opens in a new tab)" title="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <a class="social-facebook" href="https://www.facebook.com/profile.php?id=100063511886739" target="_blank" rel="noopener noreferrer" aria-label="Friends Clothes and Tailor on Facebook (opens in a new tab)" title="Facebook">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 22v-9h3l.5-4H14V7c0-1.2.4-2 2-2h2V1.4A25 25 0 0 0 15 1c-3 0-5 1.8-5 5v3H7v4h3v9h4Z"/></svg>
+    </a>
+  </nav>
+</body>
+</html>
